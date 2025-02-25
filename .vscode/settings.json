@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.cpp": "cpp",
-        "climits": "cpp"
+        "climits": "cpp",
+        "iostream": "cpp"
     }
 }
