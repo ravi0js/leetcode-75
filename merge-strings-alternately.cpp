@@ -3,6 +3,7 @@ You are given two strings word1 and word2. Merge the strings by adding letters i
 
 Return the merged string.
 */
+
 class Solution {
 public:
     string mergeAlternately(string word1, string word2) {
@@ -22,7 +23,7 @@ public:
     }
 };
 
-https://vilcart.dterp.in/crm_enquiry_list.php?ddl_search_int_status=&ddl_project=&cell=&enquiry_number=&ddl_search_source=&ddl_search_assigned_to=&ddl_enquiry_category=&dll_start_date=&dll_end_date=
+
 // or
 // python classes
 class Solution {

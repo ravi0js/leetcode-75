@@ -8,13 +8,13 @@ public:
                 (i == 0 || flowerbed[i - 1] == 0) &&
                 (i == size - 1 || flowerbed[i + 1] == 0)) {
                 
-                flowerbed[i] = 1; // Plant a flower
-                n--; // Reduce the count of flowers needed
+                flowerbed[i] = 1; 
+                n--; 
                 
-                if (n == 0) return true; // If we placed enough flowers, return true
+                if (n == 0) return true; 
             }
         }
         
-        return n <= 0; // Check if we could place all required flowers
+        return n <= 0; 
     }
 };
