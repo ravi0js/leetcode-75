@@ -142,4 +142,9 @@ int main()
 // 20. Write a C++ program to check whether two given integers are in the range 40..50 inclusive, or they are both in the range 50..60 inclusive.
 
 // 21. Write a C++ program to find the larger value from two positive integer values that is in the range 20..30 inclusive. Also, return 0 if neither is in that range.
+
+// 22 .Write a C++ program to check if a given string contains between 2 and 4 'z' characters.
+// 23 .Write a C++ program to check if two given non-negative integers have the same last digit.
+// 24. Write a C++ program to create the string which is n (non-negative integer) copies of a given string.
+// 25. Write a C++ program to create another string which is n (non-negative integer) copies of the first 3 characters of a given string. If the length of the given string is less than 3 then return n copies of the string.
 */
