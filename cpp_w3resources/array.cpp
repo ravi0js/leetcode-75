@@ -177,10 +177,9 @@ int main() {
 */
 // KNS-OCT-PRI-85907---> 9620127733 -->8-->  JAGANNATH
 // 10. Write a C++ program to find the smallest element missing from a sorted array.
-#include <iostream>
-using namespace std;
 
 void sortedArray(int arr[], int len) {
+    int smallest_missing = 0; 
 
     for (int i = 0; i < len - 1; i++) {
         for (int j = i + 1; j < len; j++) {
@@ -190,23 +189,25 @@ void sortedArray(int arr[], int len) {
                 arr[j] = temp; 
             }
         }
-    }
-
-    int smallest_missing = 0;
-    for (int i = 0; i < len; i++) {
+        
         if (arr[i] == smallest_missing) {
-            smallest_missing++; 
+            smallest_missing++;
         }
     }
 
-    cout << "Smallest missing element: " << smallest_missing << endl;
+    if (arr[len - 1] == smallest_missing) {
+        smallest_missing++;
+    }
+    cout<< "Smallest missing element: " << smallest_missing << endl;
 }
 
 int main() {
-    int arr[] = {4, 5, 9, 12, 9, 22, 45, 7};
+    int arr[] = {4, 5, 9, 12, 9, 22, 45, 7, 0, 2};
     int len = sizeof(arr) / sizeof(arr[0]);
 
     sortedArray(arr, len);
 
     return 0;
 }
+
+    
