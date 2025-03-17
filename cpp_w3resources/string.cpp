@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 /*
-// Write a C++ program to reverse a given string.
+// 1. Write a C++ program to reverse a given string.
 
 string reverse_string(string st)
 {
@@ -23,9 +23,9 @@ int main()
     return 0;
 }
 
-*/
 
-// Write a C++ program to change every letter in a given string with the letter following it in the alphabet (i.e. a becomes b, p becomes q, z becomes a).
+
+// 2. Write a C++ program to change every letter in a given string with the letter following it in the alphabet (i.e. a becomes b, p becomes q, z becomes a).
 
 string change_to_next_letter(string st) {
     for (int i = 0; i < st.size(); i++) {
@@ -67,3 +67,56 @@ int main() {
     
     return 0;
 }
+
+// 3. Write a C++ program to capitalize the first letter of each word in a given string. Words must be separated by only one space.
+
+
+void captilizeEachLetterOfWords(string st)
+{
+    cout<<endl<<st<<endl;
+    string formattedString(st.length(), ' '); 
+    for(int i=0;i<st.length();i++)
+    {
+        if((i==0 || st[i-1] == ' ') && (st[i]<='z'&& st[i]>='a'))
+            formattedString[i] = st[i]-32;
+        else
+            formattedString[i] = st[i];
+    }
+    cout<<"Formated String: "<< formattedString <<"End of String";
+}
+int main()
+{
+    string st="I am here not for you";
+    
+    captilizeEachLetterOfWords(st);
+    return 0;
+}
+
+// 4. Write a C++ program to find the largest word in a given string.
+
+
+int largestWordInString(string st)
+{
+    int largest = 0, counter=0;;
+    for (int i = 0; i < st.length(); i++) {
+        if (st[i] != ' ') {
+            counter++; 
+        } else {
+            largest = (largest> counter)?largest:counter; 
+            counter = 0; 
+        }
+    }
+    return largest;
+    
+}
+int main()
+{
+    string st="I am herenot for you";
+
+    cout<<"largest length: "<<largestWordInString(st);
+    return 0;
+}
+
+*/
+
+// 5. Write a C++ program to sort characters (numbers and punctuation symbols are not included) in a string.
